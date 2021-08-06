@@ -1,0 +1,23 @@
+
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+body > ul > li > a {
+    color: forestgreen
+}
+
+body > div > p {
+    color: darkblue;
+    background-color: whitesmoke;
+    max-width: 30%;
+
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap
+}

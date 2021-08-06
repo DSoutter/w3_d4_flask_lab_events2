@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+<h1>Here are the great events</h1>
+<div class='grid'>
+{% for event in events %}
+
+<p>{{event.name}} on {{event.date}} at {{event.location}}. People say it's {{event.description}}. {{event.guests}} people expected.
+    {% if event.recurring %}
+    <span> &#9852; RECURRING!</span>
+    {% endif %}
+</p>
+
+{% endfor %}
+</div>
+
+{% endblock %}
